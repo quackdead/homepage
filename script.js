@@ -47,4 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+if (window.innerWidth <= 768 || /Mobi|Android/i.test(navigator.userAgent)) {
+    document.body.innerHTML = "<h1 style='text-align:center; color: white; font-size: 30px; font-family: \"sans\", sans-serif'>This site doesn't work on mobile.</h1>";
+  }
 
