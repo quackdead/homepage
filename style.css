@@ -27,6 +27,8 @@ div, a {
 }
 img {
     margin-left: auto;
+    width: 100%;
+    max-width: 384px;
 }
 ul {
     list-style-type: none;
@@ -77,27 +79,22 @@ li {
     outline: none;
     transition: all 0.3s ease;
     box-shadow: 8px 8px 0 #000;
-  }
-  
+}
 .input::placeholder {
-color: #888;
+    color: #888;
 }
-
 .input:hover {
-transform: translate(-4px, -4px);
-box-shadow: 12px 12px 0 #000;
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0 #000;
 }
-
 .input:focus {
-background-color: #000;
-color: #fff;
-border-color: #ffffff;
+    background-color: #000;
+    color: #fff;
+    border-color: #ffffff;
 }
-
 .input:focus::placeholder {
-color: #fff;
+    color: #fff;
 }
-
 @keyframes typing {
 from {
     width: 0;
@@ -106,25 +103,21 @@ to {
     width: 100%;
 }
 }
-
 @keyframes blink {
 50% {
     border-color: transparent;
 }
 }
-
 .input:focus::after {
-content: "|";
-position: absolute;
-right: 10px;
-animation: blink 0.7s step-end infinite;
+    content: "|";
+    position: absolute;
+    right: 10px;
+    animation: blink 0.7s step-end infinite;
 }
-
 .input:valid {
-animation: typing 2s steps(30, end);
+    animation: typing 2s steps(30, end);
 }
 .input-container {
-position: relative;
-width: 50%;
-min-width: 400px;
+    position: relative;
+    width: 100%;
 }
