@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.today-and-search {
+    align-self: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "sans", sans-serif;
+    justify-content: space-between;
+}
+div, a {
+    color: white;
+}
+.links-img {
+    margin-top: 40px;
+    align-self: center;
+    display: flex;
+    width: 80%;
+    font-family: "sans", sans-serif;
+    font-size: 30px;
+}
+img {
+    margin-left: auto;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.today, .search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.week-day {
+    margin-top: 0;
+    text-align: center;
+}
+.today {
+    font-size: 35px;
+}
+.duck, .google {
+    width: 100%;
+}
+.time-date {
+    margin-bottom: 20px;
+}
+/* From Uiverse.io by 0xnihilism */ 
+.input {
+    width: 100%;
+    max-width: 4709px;
+    height: 30px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: "Courier New", monospace;
+    color: #000;
+    background-color: #fff;
+    border: 4px solid #000;
+    border-radius: 0;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 8px 8px 0 #000;
+  }
+  
+.input::placeholder {
+color: #888;
+}
+
+.input:hover {
+transform: translate(-4px, -4px);
+box-shadow: 12px 12px 0 #000;
+}
+
+.input:focus {
+background-color: #000;
+color: #fff;
+border-color: #ffffff;
+}
+
+.input:focus::placeholder {
+color: #fff;
+}
+
+@keyframes typing {
+from {
+    width: 0;
+}
+to {
+    width: 100%;
+}
+}
+
+@keyframes blink {
+50% {
+    border-color: transparent;
+}
+}
+
+.input:focus::after {
+content: "|";
+position: absolute;
+right: 10px;
+animation: blink 0.7s step-end infinite;
+}
+
+.input:valid {
+animation: typing 2s steps(30, end);
+}
+.input-container {
+position: relative;
+width: 50%;
+}
